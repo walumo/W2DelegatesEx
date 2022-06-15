@@ -30,9 +30,14 @@ namespace W2DelegatesEx
             Del loader2 = new Del(TimesHundred);
             Del loader3 = new Del(TimesThousand);
 
+            Del loadAll = loader1;
+            loadAll += loader2;
+            loadAll += loader3;
+
             Console.WriteLine(loader1(number));
             Console.WriteLine(loader2(number));
             Console.WriteLine(loader3(number));
+            Console.WriteLine(loadAll(number));
         }
     }
 }
