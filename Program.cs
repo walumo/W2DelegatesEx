@@ -8,6 +8,8 @@ namespace W2DelegatesEx
 {
     class Program
     {
+        static int number = 458;
+
         public delegate int Del(int num);
         public static int TimesTen(int num)
         {
@@ -23,7 +25,7 @@ namespace W2DelegatesEx
         }
         static void Main(string[] args)
         {
-            int number = 458;
+
             Del loader1 = new Del(TimesTen);
             Del loader2 = new Del(TimesHundred);
             Del loader3 = new Del(TimesThousand);
